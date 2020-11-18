@@ -4,6 +4,7 @@ import Cell from "./Cell";
 import { revealed } from "../util/reveal";
 import TopBar from "./TopBar";
 import Modal from "./Modal";
+
 export default function Board() {
   const [board, setBoard] = useState([]);
   const [mineLocations, setMineLocations] = useState([]);

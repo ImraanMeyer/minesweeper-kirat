@@ -1,3 +1,5 @@
+import React from 'react';
+
 export default (row, col, bombs) => {
   let board = [];
   let mineLocation = [];

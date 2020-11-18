@@ -1,3 +1,5 @@
+import React from 'react';
+
 export const revealed = (arr, x, y, newNonMinesCount) => {
   console.log(arr[x][y]);
   if (arr[x][y].revealed) {

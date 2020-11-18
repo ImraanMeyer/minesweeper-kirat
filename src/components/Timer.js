@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 export default function Timer({ gameOver, sendTime }) {
-  let timeIntervalId;
+  
   let [time, setTime] = useState(0);
   let [sTime, setSTime] = useState(0);
 
@@ -13,6 +13,8 @@ export default function Timer({ gameOver, sendTime }) {
   }, [gameOver, time]);
 
   useEffect(() => {
+    let timeIntervalId;
+    
     const incrementTime = () => {
       let newTime = time + 1;
       setTime(newTime);
